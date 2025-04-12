@@ -10,3 +10,14 @@ Steps to install ansible on master node:-
  - install ansible using below commands
  - Ansible is written python and used ppa package
  
+ >sudo apt update && sudo apt upgrade -y
+ >sudo apt install software-properties-common -y
+ >sudo add-apt-repository --yes --update ppa:ansible/ansible
+ >sudo apt install ansible -y
+ >ansible --version
+
+
+Note :- after installation navigate to /etc/ansible/hosts file
+
+Use below command to upload .pem file 
+> sudo scp -i "ansible_all_node_key.pem" ansible_all_node_key.pem ubuntu@ec2-65-2-70-126.ap-south-1.compute.amazonaws.com:/home/ubuntu/.ssh                     

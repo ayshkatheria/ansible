@@ -1,5 +1,9 @@
 -
- name: Installing nginx on all the node servers
- hosts: servers
- become: yes
- tasks:
+  name: Installing nginx on all the node servers
+  hosts: servers
+  become: yes
+  tasks:
+   - name: install nginx
+     apt:
+         name: nginx
+         state: latest 
