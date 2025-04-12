@@ -1,0 +1,12 @@
+1. To create connection between master node (where ansible is installed) and server nodes we have to use "SSH" key.
+ - use same key to create all the ec2 instances.
+ - upload .pem key to master node and to share that with other nodes need to give path of the key in inventory file.
+
+2. Inventory file holds all the server nodes IP addresses , Username, .pem file path 
+3. We can create inventory as a directory as well.
+
+Steps to install ansible on master node:-
+ - create an EC2 machine with pem key
+ - install ansible using below commands
+ - Ansible is written python and used ppa package
+ 

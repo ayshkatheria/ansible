@@ -1,0 +1,5 @@
+-
+ name: Installing nginx on all the node servers
+ hosts: servers
+ become: yes
+ tasks:
